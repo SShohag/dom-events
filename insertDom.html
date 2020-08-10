@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element Insert option</title>
+    <style>
+        .author{
+            border: 3px solid burlywood;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <article id="author-1" class="author">
+                <h3>Dom Test</h3>
+                <p class="write">same-1</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente ratione quasi eius quisquam deserunt officia consectetur ipsa libero placeat veritatis, illum, perferendis accusantium quo nesciunt assumenda doloremque numquam fuga?</p>
+            </article>
+            <article class="author">
+                <h3>Dom Test</h3>
+                <p class="write">same-2</p>
+                <p>Sapiente dolore dolores odit ab autem necessitatibus ea molestias culpa, eveniet minus perferendis unde laudantium exercitationem, dignissimos, deserunt corrupti vero. Nihil labore odio eaque deleniti ducimus veritatis repudiandae animi unde?</p>
+            </article>
+            <article class="author">
+                <h3>Dom Test</h3>
+                <p class="write">same-3</p>
+                <p>Reiciendis, corrupti consequuntur ipsum voluptatibus recusandae deserunt magni voluptates repellat natus amet nisi. Sit ducimus laudantium libero, incidunt doloremque sint eum magnam laborum, beatae eaque temporibus doloribus illo fugit facere.</p>
+            </article>
+            <article id="ist">
+                <h3>Honey Bunny List</h3>
+                <ul>
+                    <li>list item-1</li>
+                    <li>list item-2</li>
+                    <li>list item-3</li>
+                    <li>list item-4</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script>
+        var article = document.getElementById("author-1");
+        var newParagraph = document.createElement('p');
+        newParagraph.innerHTML = "This is new added line";
+        article.appendChild(newParagraph).style.color = 'cyan';
+//added list item
+
+        var item = document.getElementById('ist');
+        var anotherList = document.createElement('li');
+        anotherList.innerHTML = "Hi Baby This is new Hopp";
+        item.appendChild(anotherList).style.color = 'darkyellow'
+
+    </script>
+</body>
+</html>

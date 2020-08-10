@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shohag Dom</title>
+    <style>
+        .writer{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            padding:0px 10px;
+            margin: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <section>
+        <article class="writer article-1">
+            <h3>Writer-1</h3>
+            <p class="author">author-1</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt facilis vero atque ullam esse reiciendis itaque impedit ut maiores, nostrum id nam optio, dolor nihil consequuntur corporis. Modi, dolorem in?</p>
+        </article>
+        <article class="writer article-1">
+            <h3>Writer-2</h3>
+            <p>Pariatur quas laudantium amet tempore quam eius alias inventore. Necessitatibus corporis, officiis beatae laudantium omnis, deleniti fugit excepturi ea ipsa distinctio ex vero minima veniam sunt! Fuga ratione incidunt expedita.</p>
+        </article>
+        <article class="writer article-1">
+            <h3>Writer-3</h3>
+            <p>Labore mollitia harum sapiente placeat blanditiis minus, quas dicta omnis quaerat facere dignissimos, accusantium sunt sequi veritatis sed officia! Sunt, quasi eius explicabo id expedita saepe at repellat impedit perspiciatis.</p>
+        </article>
+    </section>
+    <script>
+        document.body.style.backgroundColor  = "gray"
+        var authors = document.querySelectorAll(".article-1 h3");
+        for (var i= 0; i<authors.length; i++){
+            var element = authors[i];
+            element.innerHTML = ('Auto Man-' +(i+1));
+            element.style.backgroundColor = "steelblue";
+            element.style.color = "white";
+            element.style.fontSize = "20px";
+            element.style.fontWeight = "bold";
+            element.style.margin = "10px";
+            element.style.textAlign = "center";
+            element.style.borderRadius = "10px";
+        }
+        var tag = document.getElementsByTagName("p");
+        for (let i = 0; i < tag.length; i++) {
+            const element = tag[i];
+            var elements = tag[i];
+            element.style.color = "white";
+            
+        }
+    </script>
+</body>
+</html>

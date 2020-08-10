@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Modify</title>
+    <style>
+        article{
+            border:2px solid brown;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Hello Bangladesh</h1>
+            <article>
+                <h3>article-1</h3>
+                <p title="i am the most important author" class="author">author-1</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati expedita ipsum harum cumque facilis officia, dignissimos quod odio nisi inventore quos animi alias eius esse vitae magnam corrupti necessitatibus cum.</p>
+            </article>
+            <article class="spacial">
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea facere asperiores minima, vero quasi quis incidunt laboriosam doloremque quam labore sit saepe voluptatibus iure exercitationem quas nam nesciunt vel hic.</p>
+            </article>
+            <article class="spacial">
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quod facilis harum, illum repellendus dicta ipsam, hic delectus illo veritatis rem possimus officia corrupti doloribus sunt asperiores voluptas nobis dignissimos?</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        document.body.style.backgroundColor = "white";
+        var authors = document.querySelectorAll('.spacial h3');
+        for (var i = 0; i < authors.length; i++){
+            var element = authors[i];
+            element.innerHTML = 'lekhok-' +i;
+            element.style.backgroundColor = 'red';
+            element.style.margin = '10px'
+        }
+    </script>
+</body>
+</html>
